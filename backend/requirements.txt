@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+
+influxdb
+paho-mqtt
+pymysql
+requests
+
+numpy
+pandas
+joblib
+torch

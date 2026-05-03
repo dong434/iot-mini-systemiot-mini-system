@@ -10,7 +10,7 @@
 竞赛前后端开发/
 ├─ backend/
 │  ├─ server.py                 # FastAPI 后端主程序
-│  └─ requirements.txt.txt      # Python 依赖清单（当前并不完整）
+│  └─ requirements.txt          # Python 依赖清单
 ├─ device/
 │  └─ simulator.py              # 模拟设备数据上报脚本
 ├─ LSTM模型/
