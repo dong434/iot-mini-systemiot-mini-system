@@ -1,0 +1,29 @@
+services:
+  mqtt:
+    image: eclipse-mosquitto
+    container_name: mqtt
+    ports:
+      - "1883:1883"
+  
+  influxdb:
+    image: influxdb:1.8
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "3306:3306"
+
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: iot_db
+      MYSQL_USER: iot_user
+      MYSQL_PASSWORD: 123456
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
